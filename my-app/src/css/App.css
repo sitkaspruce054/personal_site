@@ -1,0 +1,148 @@
+
+* {
+  font-family: monospace;
+}
+
+.theme-dark {
+  --text-color: #fff;
+  --background-color: #2e2d32;
+  --accent-color: #fff;
+}
+
+
+.theme-light {
+  --text-color: #2e2d32;
+  --background-color: #fff;
+  --accent-color: #2e2d32;
+}
+
+html, #root {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  
+}
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  
+  
+  
+
+}
+@keyframes fadeIn {
+  0% {opacity: 0%}
+  100% {opacity: 100%;}
+}
+.welcomeWrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display:flex;
+  justify-content: center;
+  animation: fadeIn 5s;
+}
+
+.toggleWrapper {
+  display:flex;
+  justify-content: center;
+  padding-top: 15px;
+  
+}
+
+.navWrapper {
+  
+  margin-top: 50px;
+  
+
+  
+  margin-left: 25vw;
+  margin-right: 25vw;
+  
+  
+}
+
+.navLine {
+  animation: expand .75s;
+  animation-timing-function: ease-in-out;
+  height: 1px;
+  background-color: var(--accent-color);
+  
+}
+.items {
+  display:flex;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+  animation: fadeItems 5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeItems {
+  0% {
+    opacity: 0%;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 100%
+  }
+}
+
+@keyframes expand {
+  0% {
+    
+    transform: scale(.1) translateY(25px)
+  }
+  100% {
+    
+    transform: scale(1) 
+  }
+}
+
+@keyframes shift {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+#toggle {
+  
+  border-color: transparent;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: 4em;
+}
+a {
+  
+  color: var(--accent-color)
+}
+.tabs {
+
+  border-style: none;
+  background-color: var(--background-color);
+  color: var(--accent-color)
+}
+
+.renderWrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  max-width: 50vw;
+  margin-top: 10px;
+}
+
+
+.projectDiv {
+  
+  border-color: var(--accent-color);
+  border-style: ridge;
+  margin: 10px;
+  padding: 15px;
+}
