@@ -12,7 +12,7 @@ const concurrentProxy: projectDesc = {
 
 const CHIP8: projectDesc = {
     name: "CHIP8 interpreter/ emulator (Go)",
-    githubLink: "[placeholderlink]",
+    githubLink: "[link coming soon...]",
     description: "CHIP8 is a small, interpreted language developed for the" +
     " 1802 microprocessor. This emulator, written in Go, serves as a bytecode interpreter for the language," +
     " allowing users to run select programs."
@@ -20,13 +20,13 @@ const CHIP8: projectDesc = {
 
 const Torrent: projectDesc = {
     name: "BitTorrent Client (Go)",
-    githubLink: "[placeholder]",
+    githubLink: "[link coming soon...]",
     description: "A minimalist, multithreaded bitTorrent client written in Go that runs as a CLI app in the terminal."
 }
 
 const GB: projectDesc = {
-    name: "Gameboy Emulator (C++)",
-    githubLink: "[placeholder]",
+    name: "Gameboy Emulator (C++) (in progress :))",
+    githubLink: "[link coming soon...]",
     description: "An in-progress emulator for the SM83 chip, being used here to play gameboy games :). I'm working on this to learn C++."
 }
 export function Projects(props: any) {
