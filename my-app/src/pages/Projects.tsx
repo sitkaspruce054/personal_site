@@ -23,13 +23,24 @@ const Torrent: projectDesc = {
     githubLink: "[placeholder]",
     description: "A minimalist, multithreaded bitTorrent client written in Go that runs as a CLI app in the terminal."
 }
-export function Projects(props: any) {
 
+const GB: projectDesc = {
+    name: "Gameboy Emulator (C++)",
+    githubLink: "[placeholder]",
+    description: "An in-progress emulator for the SM83 chip, being used here to play gameboy games :). I'm working on this to learn C++."
+}
+export function Projects(props: any) {
+    
     return (
         <div>
+            <div>
+                Here are some things I've done / currently working on.
+            </div>
             <ProjectDiv {...Torrent} />
             <ProjectDiv {...CHIP8} />
             <ProjectDiv {...concurrentProxy}/>
+            <ProjectDiv {...GB} />
+
         </div>
     )
 }

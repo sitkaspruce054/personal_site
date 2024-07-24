@@ -111,6 +111,7 @@ html, #root {
 #toggle {
   
   border-color: transparent;
+  
   color: var(--text-color);
   background-color: var(--background-color);
   font-size: 4em;
@@ -121,9 +122,17 @@ a {
 }
 .tabs {
 
-  border-style: none;
+  border-color: var(--background-color);
   background-color: var(--background-color);
-  color: var(--accent-color)
+  color: var(--accent-color);
+  border-style: solid;
+  
+}
+.tabs:hover {
+  transition: 1000ms;
+  border-style:double;
+  border-color: var(--accent-color);
+  
 }
 
 .renderWrapper {
@@ -146,3 +155,4 @@ a {
   margin: 10px;
   padding: 15px;
 }
+
