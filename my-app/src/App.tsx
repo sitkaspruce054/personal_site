@@ -29,6 +29,7 @@ function App() {
       <div className="toggleWrapper">
         <Toggle />
       </div>
+      <div className="myName">Fernando</div>
       
       <div className="welcomeWrapper">
         

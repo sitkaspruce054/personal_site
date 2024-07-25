@@ -42,6 +42,12 @@ html, #root {
   justify-content: center;
   animation: fadeIn 5s;
 }
+.myName {
+  font-size: xx-large;
+  justify-content: center;
+  display: flex;
+  animation: fadeIn 5s;
+}
 
 .toggleWrapper {
   display:flex;
