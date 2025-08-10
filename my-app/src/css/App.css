@@ -1,4 +1,3 @@
-
 * {
   font-family: monospace;
 }
@@ -7,6 +6,7 @@
   --text-color: #fff;
   --background-color: #2e2d32;
   --accent-color: #fff;
+  --active-tab-color: #FFD700;
 }
 
 
@@ -14,6 +14,7 @@
   --text-color: #2e2d32;
   --background-color: #fff;
   --accent-color: #2e2d32;
+  --active-tab-color: #2563eb;
 }
 
 html, #root {
@@ -36,17 +37,17 @@ html, #root {
   100% {opacity: 100%;}
 }
 .welcomeWrapper {
-  margin-top: 50px;
+  margin-top: 0;
   margin-bottom: 50px;
   display:flex;
   justify-content: center;
-  animation: fadeIn 5s;
+  animation: fadeIn 1.5s;
 }
 .myName {
   font-size: xx-large;
   justify-content: center;
   display: flex;
-  animation: fadeIn 5s;
+  animation: fadeIn 1.5s;
 }
 
 .toggleWrapper {
@@ -62,8 +63,8 @@ html, #root {
   
 
   
-  margin-left: 25vw;
-  margin-right: 25vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   
   
 }
@@ -79,7 +80,7 @@ html, #root {
   display:flex;
   margin-bottom: 10px;
   justify-content: space-evenly;
-  animation: fadeItems 5s;
+  animation: fadeItems 0.5s;
   animation-timing-function: ease-in-out;
 }
 
@@ -134,12 +135,9 @@ a {
   border-style: solid;
   
 }
-.tabs:hover {
-  transition: 1000ms;
-  border-style:double;
-  border-color: var(--accent-color);
-  
-}
+
+
+
 
 .renderWrapper {
   display: flex;
@@ -153,12 +151,26 @@ a {
   margin-top: 10px;
 }
 
-
+.projectWrapper {
+  margin-top: 12px;
+}
 .projectDiv {
   
   border-color: var(--accent-color);
   border-style: ridge;
+  border-radius: 10px;
   margin: 10px;
   padding: 15px;
+}
+
+.aboutFadeIn {
+  animation: fadeIn 1.5s;
+}
+
+.activeTab {
+  background-color: transparent;
+  color: var(--active-tab-color);
+  text-shadow: none;
+  z-index: 1;
 }
 

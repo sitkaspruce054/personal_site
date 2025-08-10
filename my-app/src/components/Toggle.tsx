@@ -30,7 +30,7 @@ function Toggle() {
     return (
         <div className="container --toggle">
             <button id="toggle" className="toggle--checkbox" onClick={handleOnClick}>
-            ◐
+            ☀
             </button>
             
             <label htmlFor="toggle" className="toggle--label">

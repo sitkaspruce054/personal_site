@@ -1,7 +1,5 @@
-
 import "../css/App.css"
-import { About } from "../pages/About"
-import { useState,useEffect } from "react"
+
 
 export function NavBar(props: any) {
 
@@ -15,9 +13,9 @@ export function NavBar(props: any) {
         <div className = "navWrapper">
             
             <div className = "items">
-                <button className= "tabs" onClick={() => props.selectPageCallback("projects")}>Projects</button>
-                <button className= "tabs" onClick= {() => props.selectPageCallback("about")}>About</button>
-                <button className= "tabs" onClick ={() => props.selectPageCallback("resume")}>Resume</button>
+                <button className={"tabs" + (props.currentPage === "projects" ? " activeTab" : "")} onClick={() => props.selectPageCallback("projects")}>Projects</button>
+                <button className={"tabs" + (props.currentPage === "about" ? " activeTab" : "")} onClick= {() => props.selectPageCallback("about")}>About</button>
+                <button className={"tabs" + (props.currentPage === "resume" ? " activeTab" : "")} onClick ={() => props.selectPageCallback("resume")}>Resume</button>
             </div>
             <div className = "navLine"></div>
             

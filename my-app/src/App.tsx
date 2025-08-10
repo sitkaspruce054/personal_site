@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './css/App.css'
 import { NavBar } from './components/NavBar';
-import { home } from './pages/home';
+import {  } from './pages/home';
 import { useState, useEffect} from 'react';
 import { Welcome } from './components/Welcome';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route
+  
 } from "react-router-dom"
 import { keepTheme } from './components/LightDarkComp';
 import Toggle from './components/Toggle';
@@ -21,8 +19,11 @@ function App() {
     keepTheme();
   })
 
-  const [page, setPage] = useState("")
+  const [page, setPage] = useState("about")
   
+  useEffect(() =>{
+    setPage("about")
+  },[])
   return (
     
     <div className="App">
@@ -37,7 +38,7 @@ function App() {
         
       </div>
 
-      <NavBar selectPageCallback = {setPage}/>
+      <NavBar selectPageCallback = {setPage} currentPage={page}/>
       <div className= "renderWrapper">
         <PageRenderer page = {page} />
       </div>
